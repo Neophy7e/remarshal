@@ -200,7 +200,7 @@ def parse_command_line(argv):
                 parser.error('Need an explicit output format')
 
     # Wrap yaml_style.
-    args.__dict__['yaml_options'] = {'default_style': args.yaml_style}
+    args.__dict__['yaml_options'] = {'default_style': args.yaml_style, 'width': 10000}
     del args.__dict__['yaml_style']
 
     return args
